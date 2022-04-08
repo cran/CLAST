@@ -17,7 +17,7 @@ a list with elements S, M and design, containing all possible values of total su
 }
 }
 \value{
-a list with element "lims" as well as all elements of argument obj. The extra element contains the ML rank of each possible the outcome.
+a list with element "lims" as well as all elements of argument obj. The extra element contains the ML estimator of p for each possible outcome.
 
 }
 

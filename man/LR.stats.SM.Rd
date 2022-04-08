@@ -24,7 +24,7 @@ character, either "upper" or "lower"
 }
 }
 \value{
-a list with element "lims" as well as all elements of argument obj. The extra element contains the LR rank of each possible the outcome.
+a list with element "lims" as well as all elements of argument obj. The extra element contains the LR exact limit for each possible outcome.
 }
 \author{
 Chris J. Lloyd

@@ -11,11 +11,11 @@ exact.upper.limits.SM(obj, lims = NULL, alpha = 0.05, set = FALSE)
 }
 
 \arguments{
-  \item{obj}{
-list with components $count, $S, $N and $lims, typically the output of LR.stats.SM, CP.stats.SM, JT.rank.SM or ML.rank.SM
+ \item{obj}{
+list with components $count, $S, $N, typically the output of LR.stats.SM, CP.stats.SM, JT.rank.SM or ML.rank.SM. In this case, it will also have element $lims.
 }
   \item{lims}{
-a ranking vector, most often based on approximate lower limits. This can be provided if it is not already be present in obj$lims.
+a vector of same length as obj$count, most often an approximate lower limits. If this is missing, then it should be an element of obj$lims.
 }
   \item{alpha}{
 exact coverage error

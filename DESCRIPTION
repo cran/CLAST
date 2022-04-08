@@ -1,7 +1,7 @@
 Package: CLAST
 Type: Package
 Title: Exact Confidence Limits after a Sequential Trial
-Version: 1.0.0
+Version: 1.0.1
 Date: 2022-04-02
 Author: Chris J. Lloyd
 Maintainer: Chris J. Lloyd <c.lloyd@mbs.edu>
@@ -12,6 +12,6 @@ Imports: stats, graphics
 Encoding: UTF-8
 RoxygenNote: 7.1.2
 NeedsCompilation: no
-Packaged: 2022-04-01 23:46:48 UTC; User
+Packaged: 2022-04-08 01:07:07 UTC; User
 Repository: CRAN
-Date/Publication: 2022-04-05 10:02:34 UTC
+Date/Publication: 2022-04-08 07:02:40 UTC

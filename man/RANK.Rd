@@ -2,11 +2,11 @@
 \alias{RANK}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Produces ranking of consecutive integers from (1:unique(x))-1
+Produces ranks of entries of vector
 }
 \description{
-An alternative to the function rank which replaces ties by average rank.
-This function gives each tied value the same rank.
+An alternative to the function rank (which replaces ties by average rank).
+This function instead gives each tied value the same rank. The output will have the same length as x but contain integer values from 1 to length(unique(x)).
 }
 \usage{
 RANK(x)
@@ -18,7 +18,7 @@ a numeric vector
 }
 }
 
-\value{Vector of ranks of the same length as x.
+\value{Vector of integer ranks of the same length as x.
 }
 \author{
 Chris J. Lloyd

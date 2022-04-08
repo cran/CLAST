@@ -23,7 +23,7 @@ if not a component of obj
 vector of values of p at which to calculate mean value
 }
   \item{B}{
-number of evenly spaced values of p
+number of evenly spaced values of p if not provided
 }
   \item{offset}{
 if TRUE then ML mean value is subtracted
@@ -33,14 +33,11 @@ if TRUE than assign zero probability weight to extreme limits of 1 or 0.
 }
 }
 
-
 \value{
-lsit with components $x (containing grid of B values of probability) and $y (containing corresponding mean value)
+list with elements $x (containing grid of B values of probability) and $y (containing corresponding mean values)
 }
 
-\author{
-Chris J. Lloyd
-}
+\author{Chris J. Lloyd}
 
 \examples{
 n=c(5,6,5,9)
@@ -54,11 +51,18 @@ b=c(5,9,11,13)
 data.SM=sample.space.SM(n,a,b) # There are 26 elements.
 
 # Calculate all approximate LR upper limits for these 26 outcomes.
-all.LR.stats=LR.stats.SM(data.SM,type="upper")$lims
+all.LR.high=LR.stats.SM(data.SM,type="upper")$lims
+# Calculate all approximate LR upper limits for these 26 outcomes.
+all.LR.low=LR.stats.SM(data.SM,type="lower")$lims
 
 # Calculate the mean values of these lims as a function of p
-result=mv.SM(data.SM,all.LR.stats,p=(1:99)/100,offset=FALSE)
-plot(result,xlab="p",ylab="mean value")
+mv.high=mv.SM(data.SM,all.LR.high,p=(1:99)/100,offset=FALSE)
+mv.low=mv.SM(data.SM,all.LR.low,p=(1:99)/100,offset=FALSE)
+plot(c(0,1),c(0,1),ylab="mean value",xlab="p",type="n")
+lines(mv.high)
+lines(mv.low)
+abline(0,1,lty=3)
+title(main="Mean value of upper and lower limits by p")
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

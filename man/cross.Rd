@@ -34,6 +34,11 @@ Chris J. Lloyd
 A=cbind(c(1,2),c(3,4))
 v=c(5,6)
 cross(A,v)
+#     [,1] [,2] [,3]
+#[1,]    1    3    5
+#[2,]    2    4    5
+#[3,]    1    3    6
+#[4,]    2    4    6
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

@@ -3,7 +3,8 @@
 
 ML.rank.SM <-
 function(obj){
-    # Calculated ratio ranking of sample space
+    # Calculated ML estimator of p for each element of sample space.
+    # This is a potential ranking for exact limits.
     # REQUIRED ARGUMENT
     # Object returned from function sample.space
     #

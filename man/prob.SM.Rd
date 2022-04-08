@@ -34,6 +34,9 @@ list with component $prob, $count, $subcount and matrix $data giving the $subcou
 \author{
 Chris J. Lloyd
 }
+\references{
+Lloyd, C.J. (2020) Exact confidence limits after a group sequential single arm binary trial. Statistics in Medicine, Volume 38, 2389-2399. \doi{10.1002/sim.8909}
+}
 
 \examples{
 n=c(5,6,5,9)

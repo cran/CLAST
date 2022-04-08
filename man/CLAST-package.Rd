@@ -1,7 +1,7 @@
 \name{CLAST-package}
 \alias{CLAST}
 \docType{package}
-\title{
+\title{Confidence Limits After Sequential Trial
 \packageTitle{CLAST}
 }
 \description{

@@ -5,7 +5,7 @@
 Diagnostic mean values plots.
 }
 \description{
-Plots mean value of upper limit, lower limit and interval width for four different methods
+Plots mean value of upper limit, lower limit and interval width for four different ranking methods. This function is basically a wrapper for mv.plot.
 }
 \usage{
 mv.plots.SM(n, a, b, type = "interval",
@@ -29,16 +29,16 @@ Either "upper", "lower" or "interval" (default)
 Integer controlling fineness of plot (default=100)
 }
   \item{offset}{
-%%     ~~Describe \code{offset} here~~
+if TRUE then ML mean value is subtracted
 }
-  \item{plt}{
+\item{plt}{
 Logical vector indicating output plots of upper, lower and interval (default=c(1,1,1))
 }
 \item{p0}{
-Lower benchnmark for success probability
+Lower (null) benchmark for success probability
 }
   \item{p1}{
-Upper benchnmark for success probability
+Upper (alternative) benchmark for success probability
 }
   \item{focus}{
 Logical. If true, plots are restricted to p between p0 and p1. (default=FALSE)

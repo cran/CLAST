@@ -3,7 +3,7 @@
 \alias{errors}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Calculate type 1 and type 2 of specified sequential design
+Exact error rates of specified sequential design
 }
 \description{
 For a given sequential design defined by vectors a, b and n, calculate the probability of a type 1 error (assuming p=p0) and type 2 error (assuming p=p1)
@@ -45,7 +45,10 @@ b=c(5,9,11,13)
 p0=.4
 p1=.75
 errors.SM(n,a,b,p0,p1)
-
+# $type1
+# [1] 0.09590162
+# $type2
+# [1] 0.1060701
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

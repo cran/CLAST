@@ -25,7 +25,7 @@ character, either "upper" or "lower"
 }
 
 \value{
-a list with element "lims" as well as all elements of argument obj. The extra element contains the CP rank of each possible the outcome.
+a list with element "lims" as well as all elements of argument obj. The extra element contains the CP limit for each possible outcome.
 }
 \references{
 Clopper, C. and Pearson, E. S. (1934). The use of confidence or fiducial limits illustrated in the case of the binomial. Biometrika, 26 (4): 404-413. \doi{10.2307/2331986}

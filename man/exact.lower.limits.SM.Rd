@@ -5,18 +5,17 @@
 Calculates all exact lower limits.
 }
 \description{
-Calculates Buehler lower limit for all possible data sets based on ranking function provided in obj$lims.
+Calculates Buehler lower limit for all possible data sets based on a provided ranking function.
 }
 \usage{
 exact.lower.limits.SM(obj, lims = NULL, alpha = 0.05, set = FALSE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{obj}{
-list with components $count, $S, $N and $lims, typically the output of LR.stats.SM, CP.stats.SM, JT.rank.SM or ML.rank.SM
+list with components $count, $S, $N, typically the output of LR.stats.SM, CP.stats.SM, JT.rank.SM or ML.rank.SM. In this case, it will also have element $lims.
 }
   \item{lims}{
-a ranking vector, most often based on approximate lower limits. This can be provided if it is not already be present in obj$lims.
+a vector of same length as obj$count, most often an approximate lower limits. If this is missing, then it should be an element of obj$lims.
 }
   \item{alpha}{
 exact coverage error

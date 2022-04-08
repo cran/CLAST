@@ -11,7 +11,6 @@
 \usage{
 plt.sample.space.SM(n, a, b, p0 = NULL, p1 = NULL)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{n}{
 Design vector of sample sizes
